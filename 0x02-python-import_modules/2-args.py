@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+if __name__ == "__main__"
+ """print arguments"""
 from sys import argv
 argv_len = len(argv)
 i = 1
