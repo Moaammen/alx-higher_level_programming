@@ -47,6 +47,7 @@ class Rectangle:
             return 0
         else:
             return ((self.__height + self.__width) * 2)
+
     def __str__(self):
         """Return the printable representation of the Rectangle.
 
