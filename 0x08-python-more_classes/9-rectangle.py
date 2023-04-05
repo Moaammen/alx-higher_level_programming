@@ -67,10 +67,12 @@ class Rectangle:
         if rect_1.area() >= rect_2.area():
             return rect_1
         return rect_2
+
     @classmethod
     def square(cls, size=0):
         """class method that return a new rectangle
-          that size == width == height"""
+          that size == width == height
+        """
         return Rectangle(cls(size, size))
 
     def __str__(self):
