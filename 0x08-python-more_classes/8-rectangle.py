@@ -61,13 +61,12 @@ class Rectangle:
         """check who is bigger"""
         if not isinstance(rect_1, Rectangle):
             raise TypeError("rect_1 must be an instance of Rectangle")
-        elif not isinstance(rect_2, Rectangle):
+        if not isinstance(rect_2, Rectangle):
             raise TypeError("rect_2 must be an instance of Rectangle")
-        else:
-            if rect_1.area >= rect_2.area:
-                return rect_1
-            else:
-                return rect_2
+        
+        if rect_1.area >= rect_2.area:
+            return rect_1
+        return rect_2
 
     def __str__(self):
         """Return the printable representation of the Rectangle.
