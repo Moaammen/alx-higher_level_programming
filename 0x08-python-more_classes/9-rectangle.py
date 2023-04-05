@@ -73,7 +73,7 @@ class Rectangle:
         """class method that return a new rectangle
           that size == width == height
         """
-        return Rectangle(cls(size, size))
+        return cls(size, size)
 
     def __str__(self):
         """Return the printable representation of the Rectangle.
