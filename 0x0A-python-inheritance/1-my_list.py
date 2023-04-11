@@ -2,6 +2,7 @@
 
 """initial child class"""
 
+
 class MyList(list):
     """class inhert from list"""
 
